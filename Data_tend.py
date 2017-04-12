@@ -15,5 +15,4 @@ def getdic(path_to_file):
         f=open(path_to_file, encoding='utf-8')
         h=f.read()
         pretty=json.loads(h)
-        descript=pretty['tender']['base']['description']
-        print(descript)
+        return(pretty)
